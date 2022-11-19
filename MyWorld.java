@@ -256,5 +256,11 @@ public class MyWorld extends World
         addObject(bomVertikal2, 35, 442);
         Trophy trophy =  new  Trophy();
         addObject(trophy, 552, 560);
+        BtnStop btnStop = new BtnStop();
+        addObject(btnStop,540,650);
+        PapanScore papanScore = new PapanScore();
+        addObject(papanScore,80,650);
+        CheckQuiz checkQuiz =  new  CheckQuiz();
+        addObject(checkQuiz, 502, 523);
     }
 }

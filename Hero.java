@@ -21,8 +21,9 @@ public class Hero extends Actor
         hitCheckPoint();
         hitBom();
         hitFinish();
-        getWorld().showText("Speed : "+speed,300,635);
-        getWorld().showText("Nyawa : "+hitPoint,300,665);
+        quizDetection();
+        getWorld().showText("Speed : "+speed,80,635);
+        getWorld().showText("Nyawa : "+hitPoint,80,665);
     }
     
     public void control(int speed){
@@ -105,6 +106,13 @@ public class Hero extends Actor
             Greenfoot.delay(20);
             setLocation(40, 30);
             Greenfoot.stop();
+        }
+    }
+    
+    public void quizDetection(){
+        if(isTouching(CheckQuiz.class)){
+            Greenfoot.delay(3);
+            Greenfoot.setWorld(new Quiz()); //untuk switch halaman
         }
     }
 }
