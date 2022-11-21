@@ -20,7 +20,7 @@ public class Hero extends Actor
         hitAddSpeed();
         hitCheckPoint();
         hitBom();
-        hitFinish();
+        //hitFinish();
         quizDetection();
         getWorld().showText("Speed : "+speed,80,635);
         getWorld().showText("Nyawa : "+hitPoint,80,665);
@@ -101,17 +101,19 @@ public class Hero extends Actor
         }
     }
     
-    public void hitFinish(){
+    /*public void hitFinish(){
         if(isTouching(Trophy.class)){
             Greenfoot.delay(20);
             setLocation(40, 30);
             Greenfoot.stop();
         }
-    }
+    }*/
     
     public void quizDetection(){
-        if(isTouching(CheckQuiz.class)){
-            Greenfoot.delay(3);
+        if(isTouching(Trophy.class)){
+            Greenfoot.delay(1);
+            //setLocation(0,0);
+            //setImage("stageQuiz.png");
             Greenfoot.setWorld(new Quiz()); //untuk switch halaman
         }
     }

@@ -21,7 +21,8 @@ public class BtnBenar extends Button
         }
         if(Greenfoot.mouseClicked(this)){
             Greenfoot.delay(3);
-            Greenfoot.setWorld(new MyWorld()); //untuk switch halaman
+            Greenfoot.setWorld(new Finish()); //untuk switch halaman
+            Greenfoot.stop();
         }
     }
 }

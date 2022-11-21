@@ -22,6 +22,7 @@ public class BtnStop extends Button
         if(Greenfoot.mouseClicked(this)){
             Greenfoot.delay(3);
             Greenfoot.setWorld(new Start()); //untuk switch halaman
+            Greenfoot.stop();
         }
     }
 }

@@ -260,7 +260,7 @@ public class MyWorld extends World
         addObject(btnStop,540,650);
         PapanScore papanScore = new PapanScore();
         addObject(papanScore,80,650);
-        CheckQuiz checkQuiz =  new  CheckQuiz();
-        addObject(checkQuiz, 502, 523);
+        //CheckQuiz checkQuiz =  new  CheckQuiz();
+        //addObject(checkQuiz, 502, 523);
     }
 }
