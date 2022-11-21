@@ -13,12 +13,12 @@ public class Start extends World
     private void prepare()
     {
         BtnStart btnStart = new BtnStart();
-        addObject(btnStart,300,350);
+        addObject(btnStart,300,340);
         BtnPetunjuk btnPetunjuk = new BtnPetunjuk();
         addObject(btnPetunjuk,198,455);
         BtnTentang btnTentang = new BtnTentang();
         addObject(btnTentang,404,455);
-        TextTitle textTitle = new TextTitle();
-        addObject(textTitle,300,245);
+        Title title = new Title();
+        addObject(title,300,245);
     }
 }

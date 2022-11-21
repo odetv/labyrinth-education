@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Hero
-comment0.text=\r\n\ \r\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=speed
@@ -15,5 +14,4 @@ comment6.params=
 comment6.target=void\ hitBom()
 comment7.params=
 comment7.target=void\ quizDetection()
-comment7.text=public\ void\ hitFinish(){\r\n\ \ \ \ \ \ \ \ if(isTouching(Trophy.class)){\r\n\ \ \ \ \ \ \ \ \ \ \ \ Greenfoot.delay(20);\r\n\ \ \ \ \ \ \ \ \ \ \ \ setLocation(40,\ 30);\r\n\ \ \ \ \ \ \ \ \ \ \ \ Greenfoot.stop();\r\n\ \ \ \ \ \ \ \ }\r\n}
 numComments=8

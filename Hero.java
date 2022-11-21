@@ -3,9 +3,6 @@ import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
 
-/**
- * 
- */
 public class Hero extends Actor
 {
     private int speed = 1;
@@ -16,12 +13,11 @@ public class Hero extends Actor
 
     public void act()
     {
+        quizDetection();
         control(speed);
         hitAddSpeed();
         hitCheckPoint();
         hitBom();
-        //hitFinish();
-        quizDetection();
         getWorld().showText("Speed : "+speed,80,635);
         getWorld().showText("Nyawa : "+hitPoint,80,665);
     }
@@ -66,7 +62,7 @@ public class Hero extends Actor
         if(isTouching(AddSpeed.class)){
             score += 5;
             removeTouching(AddSpeed.class);
-            //bisa tambah sound disini
+            Greenfoot.playSound("eating.wav");
             if(speed < 4){
                 speed++;
             }
@@ -88,32 +84,23 @@ public class Hero extends Actor
             setLocation(checkPointX, checkPointY);
             hitPoint--;
             speed--;
-            //bisa tambah sound disini
+            Greenfoot.playSound("bom.wav");
             if(speed == 0){
                 speed=1;
             }
             if(hitPoint == 0){
-                //bisa tambah sound kalah disini
-                setLocation(40, 30);
-                //bisa tambah image kekalahan disini
+                Greenfoot.playSound("lose.wav");
+                setLocation(300,350);
+                setImage("gameOver.png");
                 Greenfoot.stop();
             }
         }
     }
     
-    /*public void hitFinish(){
-        if(isTouching(Trophy.class)){
-            Greenfoot.delay(20);
-            setLocation(40, 30);
-            Greenfoot.stop();
-        }
-    }*/
-    
     public void quizDetection(){
         if(isTouching(Trophy.class)){
             Greenfoot.delay(1);
-            //setLocation(0,0);
-            //setImage("stageQuiz.png");
+            Greenfoot.playSound("win.wav");
             Greenfoot.setWorld(new Quiz()); //untuk switch halaman
         }
     }

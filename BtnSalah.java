@@ -21,7 +21,7 @@ public class BtnSalah extends Button
         }
         if(Greenfoot.mouseClicked(this)){
             Greenfoot.delay(3);
-            Greenfoot.setWorld(new MyWorld()); //untuk switch halaman
+            Greenfoot.setWorld(new Kalah()); //untuk switch halaman
         }
     }
 }
