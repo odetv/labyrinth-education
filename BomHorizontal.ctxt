@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=BomHorizontal
-comment0.text=\r\n\ \r\n
-comment1.params=inc
-comment1.target=BomHorizontal(int)
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ BomHorizontal\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ BomHorizontal\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=3
+comment1.params=
+comment1.target=BomHorizontal()
+comment1.text=private\ int\ speed;\r\n\ \ \ \ public\ BomHorizontal(int\ inc){\r\n\ \ \ \ \ \ \ \ speed\ \=\ inc;\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ act(){\r\n\ \ \ \ \ \ \ \ setLocation(getX()-speed,\ getY());\r\n\ \ \ \ \ \ \ \ if(isTouching(Wall.class)){\r\n\ \ \ \ \ \ \ \ \ \ \ \ speed\ \=\ -speed;\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment2.params=speed
+comment2.target=BomHorizontal(int)
+comment3.params=
+comment3.target=void\ act()
+numComments=4

@@ -1,7 +1,13 @@
 #BlueJ class context
 comment0.target=Bom
-comment0.text=\r\n\ \r\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Bom\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.params=speed
+comment1.target=Bom(int)
+comment2.params=
+comment2.target=Bom()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ bomMoveH()
+comment5.params=
+comment5.target=void\ bomMoveV()
+numComments=6
