@@ -17,19 +17,22 @@ public class Bom extends Actor
     public void act(){
         bomMoveH();
         bomMoveV();
+        WallDetect();
+    }
+    
+    protected void WallDetect(){
+        if(isTouching(Wall.class)){
+            speed = -speed;
+        }
     }
     
     protected void bomMoveH(){
         setLocation(getX()-speed, getY());
-        if(isTouching(Wall.class)){
-            speed = -speed;
-        }
+        WallDetect();
     }
     
     protected void bomMoveV(){
         setLocation(getX(), getY()-speed);
-        if(isTouching(Wall.class)){
-            speed = -speed;
-        }
+        WallDetect();
     }
 }
