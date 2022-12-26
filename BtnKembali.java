@@ -14,11 +14,7 @@ public class BtnKembali extends Button
      */
     public void act()
     {
-        if(Greenfoot.mousePressed(this)){
-            getImage().scale((int)Math.round(getImage().getWidth()*0.9),
-            (int)Math.round(getImage().getHeight()*0.9));
-            //sound bisa ditaruh disini
-        }
+        super.ButtonPressed();
         if(Greenfoot.mouseClicked(this)){
             Greenfoot.delay(3);
             Greenfoot.setWorld(new Start()); //untuk switch halaman

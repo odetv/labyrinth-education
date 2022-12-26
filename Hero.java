@@ -22,7 +22,7 @@ public class Hero extends Actor
         getWorld().showText("Nyawa : "+hitPoint,80,665);
     }
     
-    public void control(int speed){
+    private void control(int speed){
         if(Greenfoot.isKeyDown("D")){
             setLocation(getX()+speed, getY());
             if(hitWall() == true){
@@ -49,7 +49,7 @@ public class Hero extends Actor
         }
     }
     
-    public boolean hitWall(){
+    private boolean hitWall(){
         if(isTouching(Wall.class)){
             return true;
         }
@@ -58,7 +58,7 @@ public class Hero extends Actor
         }
     }
     
-    public void hitAddSpeed(){
+    private void hitAddSpeed(){
         if(isTouching(AddSpeed.class)){
             score += 5;
             removeTouching(AddSpeed.class);
@@ -72,14 +72,14 @@ public class Hero extends Actor
         }
     }
     
-    public void hitCheckPoint(){
+    private void hitCheckPoint(){
         if(isTouching(CheckPoint.class)){
             checkPointX = getX();
             checkPointY = getY();
         }
     }
     
-    public void hitBom(){
+    private void hitBom(){
         if(isTouching(Bom.class)){
             setLocation(checkPointX, checkPointY);
             hitPoint--;
@@ -97,7 +97,7 @@ public class Hero extends Actor
         }
     }
     
-    public void quizDetection(){
+    private void quizDetection(){
         if(isTouching(Trophy.class)){
             Greenfoot.delay(1);
             Greenfoot.playSound("win.wav");

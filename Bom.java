@@ -10,10 +10,6 @@ public class Bom extends Actor
         this.speed = speed;
     }
     
-    public Bom(){
- 
-    }
-    
     public void act(){
         bomMoveH();
         bomMoveV();

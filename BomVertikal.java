@@ -15,11 +15,11 @@ public class BomVertikal extends Bom
         }
     }*/
     
-    public BomVertikal(){
+    /*public BomVertikal(){
         super();
-    }
+    }*/
     
-    public BomVertikal(int speed)
+    protected BomVertikal(int speed)
     {
         super(speed);
     }

@@ -14,5 +14,13 @@ public class Button extends Actor
      */
     public void act()
     {
+        ButtonPressed();
+    }
+    
+    protected void ButtonPressed(){
+        if(Greenfoot.mousePressed(this)){
+            getImage().scale((int)Math.round(getImage().getWidth()*0.9),
+            (int)Math.round(getImage().getHeight()*0.9));
+        }
     }
 }

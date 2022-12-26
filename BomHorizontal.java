@@ -15,11 +15,11 @@ public class BomHorizontal extends Bom
         }
     }*/
     
-    public BomHorizontal(){
+    /*public BomHorizontal(){
         super();
-    }
+    }*/
     
-    public BomHorizontal(int speed)
+    protected BomHorizontal(int speed)
     {
         super(speed);
     }
