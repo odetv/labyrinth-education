@@ -1,8 +1,7 @@
 #BlueJ class context
 comment0.target=BomVertikal
-comment1.params=speed
+comment1.params=inc
 comment1.target=BomVertikal(int)
-comment1.text=public\ BomVertikal(){\r\n\ \ \ \ \ \ \ \ super();\r\n}
 comment2.params=
 comment2.target=void\ act()
 numComments=3

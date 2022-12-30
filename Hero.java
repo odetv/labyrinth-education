@@ -21,7 +21,7 @@ public class Hero extends Actor
         getWorld().showText("Speed : "+speed,80,635);
         getWorld().showText("Nyawa : "+hitPoint,80,665);
     }
-    
+
     private void control(int speed){
         if(Greenfoot.isKeyDown("D")){
             setLocation(getX()+speed, getY());
@@ -50,7 +50,7 @@ public class Hero extends Actor
     }
     
     private boolean hitWall(){
-        if(isTouching(Wall.class)){
+        if(isTouching(WallHorizontal.class) || isTouching(WallVertikal.class)){
             return true;
         }
         else{
@@ -80,7 +80,7 @@ public class Hero extends Actor
     }
     
     private void hitBom(){
-        if(isTouching(Bom.class)){
+        if(isTouching(BomVertikal.class) || isTouching(BomHorizontal.class)){
             setLocation(checkPointX, checkPointY);
             hitPoint--;
             speed--;

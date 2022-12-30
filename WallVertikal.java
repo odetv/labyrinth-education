@@ -6,7 +6,7 @@ import greenfoot.*;
 /**
  * 
  */
-public class WallVertikal extends Wall
+public class WallVertikal extends Actor
 {
 
     /**
